@@ -1,0 +1,80 @@
+/* إعادة تعيين الأساسيات */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنسيق الخلفية والخطوط */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* تنسيق الهيدر */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #0ff;
+}
+header img.logo {
+  width: 80px;
+  height: auto;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+nav a:hover {
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 60vh;
+  background: radial-gradient(circle, #0a0a0a, #000);
+}
+
+/* تنسيق الفوتر */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #0ff;
+  font-size: 16px;
+}
+
+/* تنسيق لبعض العناصر النموذجية */
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* استجابة التصميم */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
